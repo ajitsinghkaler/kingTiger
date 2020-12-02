@@ -1,9 +1,8 @@
 <button class="menuItems mat-menu-item menu-item" [matMenuTriggerFor]="menu" aria-label="Select Item">
   <img src="assets/angular.png" class="menu-img">
-
   <span class="menu-item-inner"> {{selectedOptionMenu}}</span>
 </button>
-<mat-menu #menu="matMenu">
+<mat-menu [overlapTrigger]="true" #menu="matMenu">
   <button (click)="selectedOptionMenu='The vicious cycle'" class="menu-item" mat-menu-item>
     <img src="assets/angular.png" class="menu-img">
     <span class="menu-item-inner"> The vicious cycle</span>
